@@ -1,0 +1,26 @@
+{
+  "processors": ["stylelint-processor-html"],
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-empty-line-before": null,
+
+    "declaration-no-important": true,
+    "declaration-block-single-line-max-declarations": 1,
+
+    "color-named": "never",
+    "color-hex-case": "lower",
+
+    "font-family-name-quotes": "always-where-required",
+    "font-weight-notation": "numeric",
+
+
+    "number-leading-zero": "never",
+    "number-no-trailing-zeros": true,
+
+    "comment-empty-line-before": [ "always", {
+      "except": ["first-nested"]
+    } ],
+    "max-empty-lines": 1,
+    "no-eol-whitespace": true
+  }
+}
